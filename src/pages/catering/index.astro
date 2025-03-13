@@ -3,26 +3,36 @@ import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
-import { getCollection } from 'astro:content';
-import FormattedDate from '../../components/FormattedDate.astro';
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<style>
-			main { width: 960px; }
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <style>
+      main { width: 960px; }
     </style>
-	</head>
-	<body>
-		<Header />
-		<main>
-			<section>
-			  <p>Ryan's Catering</p>
-			</section>
-		</main>
-		<Footer />
-	</body>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <section>
+        <h4>Ryan's Catering</h4>
+        <p>Owned and operated by Ryan Blakeley in Denver, CO</p>
+        <p>Classically trained chef specializing in American fine dining.</p>
+        <p><a href="/catering/menu">Catering menu</a></p>
+        <p>Email <a href="catering@ryanblakeley.net">catering@ryanblakeley.net</a></p>
+        <p>Call or text 214-724-8882</p>
+        <p><a href="/catering/schedule">Click here to schedule an in-person consultation</a></p>
+        <h5>My principles of food service:</h5>
+        <ol>
+          <li>Clean. Food is handled with care like I would want to feed myself and my family. Everything is cleaned and kept at appropriate temperatures, to a high standard. We reduce exposure to plastics.</li>
+          <li>Attentive without being noticed. Communication that suits you. I assume you're busy and I am too. With private catering, I come to you, cook, clean, and get out of there. I'm happy to chat, but working quietly is something I enjoy. Your home is your space and I respect that.</li>
+          <li>Deliver on expectations. Under promise, over deliver. If you're not satisfied I will make it right.</li>
+        </ol>
+      </section>
+    </main>
+    <Footer />
+  </body>
 </html>
 

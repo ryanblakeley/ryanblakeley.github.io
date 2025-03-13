@@ -1,0 +1,52 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+import { Image } from 'astro:assets';
+import imageReference1 from '../../images/catering-menu.1.png';
+import imageReference2 from '../../images/catering-menu.2.png';
+import imageReference3 from '../../images/catering-menu.3.png';
+import imageReference4 from '../../images/catering-menu.4.png';
+---
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <style>
+      main { width: 960px; }
+    </style>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <section>
+        <Image
+          src={imageReference1}
+          alt="Ryan's Catering menu page 1 of 4"
+          inferSize={true}
+        />
+        <Image
+          src={imageReference2}
+          alt="Ryan's Catering menu page 2 of 4"
+          inferSize={true}
+        />
+        <Image
+          src={imageReference3}
+          alt="Ryan's Catering menu page 3 of 4"
+          inferSize={true}
+        />
+        <Image
+          src={imageReference4}
+          alt="Ryan's Catering menu page 4 of 4"
+          inferSize={true}
+        />
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>
+
+
