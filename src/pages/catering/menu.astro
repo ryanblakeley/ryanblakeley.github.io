@@ -16,7 +16,7 @@ import imageReference4 from '../../images/catering-menu.4.png';
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
     <style>
       main { width: 960px; }
-      p { text-align: center; }
+      ul { padding: 0; list-style-type: none; text-align: center; }
     </style>
   </head>
   <body>
@@ -43,8 +43,10 @@ import imageReference4 from '../../images/catering-menu.4.png';
           alt="Ryan's Catering menu page 4 of 4"
           inferSize={true}
         />
-        <p><a href="/catering/other-specials">Other specials</a></p>
-        <p><a href="/catering">Return to catering page</a></p>
+        <ul>
+          <li><a href="/catering/other-specials">Other specials</a></li>
+          <li><a href="/catering">Return to catering page</a></li>
+        </ul>
       </section>
     </main>
     <Footer />

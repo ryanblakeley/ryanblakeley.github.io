@@ -11,6 +11,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
     <style>
       main { width: 960px; }
+      h4 { margin-bottom: 0.8em; }
+      h5 { margin-top: 1em; }
+      p { margin: 0.5em 0; }
+      ul { list-style-type: none; margin: 0; padding: 0; }
     </style>
   </head>
   <body>
@@ -20,7 +24,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
         <h4>Ryan's Catering</h4>
         <p>Owned and operated by Ryan Blakeley in Denver, CO.</p>
         <p>Classically trained chef specializing in American fine dining.</p>
-        <p><a href="/catering/menu">Catering menu</a></p>
+        <ul>
+          <li><a href="/catering/menu">Catering menu</a></li>
+          <li><a href="mailto:ryan@ryanblakeley.net?subject=Catering inquiry">Contact</a></li>
+        </ul>
         <h5>My principles of food service:</h5>
         <ol>
           <li>Clean. Food is handled with care like I would want to feed myself and my family. Everything is cleaned and kept at appropriate temperatures, to a high standard. We reduce exposure to plastics.</li>
