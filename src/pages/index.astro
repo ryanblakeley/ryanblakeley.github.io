@@ -9,6 +9,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 <html lang="en">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  <style>
+    ul { padding: 0; }
+    main ul li { display: block; text-align: center; }
+  </style>
   </head>
   <body>
     <Header />
@@ -17,6 +21,5 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         <li><a href="https://newsletter.ryanblakeley.net">Newsletter</a></li>
         <li><a href="/catering">Catering</a></li>
     </main>
-    <Footer />
   </body>
 </html>

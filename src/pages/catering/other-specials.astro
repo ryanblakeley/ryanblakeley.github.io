@@ -4,10 +4,9 @@ import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { Image } from 'astro:assets';
-import imageReference1 from '../../images/catering-menu.1.png';
-import imageReference2 from '../../images/catering-menu.2.png';
-import imageReference3 from '../../images/catering-menu.3.png';
-import imageReference4 from '../../images/catering-menu.4.png';
+import imageReference1 from '../../images/catering-menu-specials.1.png';
+import imageReference2 from '../../images/catering-menu-specials.2.png';
+import imageReference3 from '../../images/catering-menu-specials.3.png';
 ---
 
 <!doctype html>
@@ -25,25 +24,19 @@ import imageReference4 from '../../images/catering-menu.4.png';
       <section>
         <Image
           src={imageReference1}
-          alt="Ryan's Catering menu page 1 of 4"
+          alt="Other catering menu specials page 1 of 4"
           inferSize={true}
         />
         <Image
           src={imageReference2}
-          alt="Ryan's Catering menu page 2 of 4"
+          alt="Other catering menu specials page 2 of 4"
           inferSize={true}
         />
         <Image
           src={imageReference3}
-          alt="Ryan's Catering menu page 3 of 4"
+          alt="Other catering menu specials page 3 of 4"
           inferSize={true}
         />
-        <Image
-          src={imageReference4}
-          alt="Ryan's Catering menu page 4 of 4"
-          inferSize={true}
-        />
-        <p><a href="/catering/other-specials">Other specials</a></p>
         <p><a href="/catering">Return to catering page</a></p>
       </section>
     </main>

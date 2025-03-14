@@ -1,0 +1,37 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+---
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <style>
+      main { width: 960px; }
+    </style>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <section>
+        <h3>Catering Customer Intake Survey</h3>
+        <ol>
+          <li>Do you have a gas or electric stove top and how many burners?</li>
+          <li>Do you have a oven and does it have a broil setting?</li>
+          <li>Do you have a warming or proofing drawer?</li>
+          <li>Do you have compost collection?</li>
+          <li>Do you have a second refrigerator?</li>
+          <li>Are you ok with me using the dishwasher?</li>
+          <li>If ordering prepared foods for the refrigerator, will you provide storage containers, or would you like me to provide single-use containers (aluminum, paper, and plastic)? I can recommend restaurant-quality options (stainless steel, glass, ceramic) if you're interested.</li>
+          <li>Are you ok with me using your kitchen equipment like bowls, tools, etc.? If not, I will bring more stuff and it's no problem.</li>
+          <li>Photo(s) of the kitchen work space. </li>
+        </ol>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>

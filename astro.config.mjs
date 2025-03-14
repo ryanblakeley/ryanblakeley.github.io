@@ -10,7 +10,11 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   site: 'https://ryanblakeley.net',
   integrations: [mdx(), sitemap(), react()],
-  redirects: { '/newsletter': 'https://newsletter.ryanblakeley.net' },
+  redirects: {
+    '/blog': 'https://newsletter.ryanblakeley.net',
+    '/newsletter': 'https://newsletter.ryanblakeley.net',
+    '/about': '/',
+  },
   vite: {
     plugins: [tailwindcss()],
   },
