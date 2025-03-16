@@ -13,8 +13,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
       main { width: 960px; }
       h4 { margin-bottom: 0.5em; }
       h5 { margin-top: 1em; }
+      h6 { font-size: 15px; }
       p { margin: 0.5em 0; }
-      ul { list-style-type: none; margin: 0; padding: 0; }
+              ul { list-style-type: none; margin: 0; padding: 0; }
+              ol { display: none; padding-top: 0; margin-top: 0; }
+      ol li span { visibility: hidden; }
     </style>
   </head>
   <body>
@@ -22,15 +25,15 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
     <main>
       <section>
         <h4>Ryan's Catering</h4>
+        <p>Owned and operated by Ryan Blakeley in Denver, Colorado.</h6>
         <p>Classically trained chef specializing in American fine dining.</p>
         <ul>
           <li><a href="/catering/menu">Catering menu</a></li>
           <li><a href="mailto:ryan@ryanblakeley.net?subject=Catering inquiry">Contact</a></li>
         </ul>
-        <p>Food service that is:</p>
         <ol>
-          <li>Clean. Food is handled with care like I would want to feed myself and my family. Everything is cleaned and kept at appropriate temperatures, to a high standard. We reduce exposure to plastics.</li>
-          <li>Attentive without being noticed. Communication that suits you. With private catering, I come to you, cook, clean, and get out of there. I'm happy to chat, but working quietly is something I enjoy. I respect your space.</li>
+          <li>Clean.<span> Food is handled with care like I would want to feed myself and my family. Everything is cleaned and kept at appropriate temperatures, to a high standard. We reduce exposure to plastics.</span></li>
+          <li>Attentive without being noticed.<span> Communication that suits you. With private catering, I come to you, cook, clean, and get out of there. I'm happy to chat, but working quietly is something I enjoy. I respect your space.</span></li>
           <li>Under-promise, over-deliver. If you're not satisfied I will make it right.</li>
         </ol>
       </section>
