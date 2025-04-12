@@ -10,8 +10,8 @@ export default defineConfig({
   site: 'https://ryanblakeley.net',
   integrations: [mdx(), sitemap(), react()],
   redirects: {
-    '/blog': 'https://newsletter.ryanblakeley.net',
-    '/newsletter': 'https://newsletter.ryanblakeley.net',
+    '/blog': 'https://blog.ryanblakeley.net',
+    '/newsletter': 'https://blog.ryanblakeley.net',
     '/about': '/',
   },
   vite: {
