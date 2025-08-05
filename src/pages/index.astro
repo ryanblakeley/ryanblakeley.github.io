@@ -1,7 +1,8 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import imageReference1 from '../images/landscape-1280.jpg';
+import { Image } from 'astro:assets';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
@@ -12,6 +13,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
   <style>
     ul { padding: 0; }
     main ul li { display: block; text-align: center; }
+    img { width: 100%; border-radius: 0px; }
   </style>
   </head>
   <body>
@@ -19,6 +21,12 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     <main>
       <ul>
         <li><a href="https://blog.ryanblakeley.net">Blog</a></li>
+      </ul>
     </main>
+    <Image
+      src={imageReference1}
+      alt="Landscape photo"
+      inferSize={true}
+    />
   </body>
 </html>
